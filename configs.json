@@ -1,0 +1,8 @@
+{
+	"regServer" : "http://208.89.208.52",
+	"application" : {
+		"appId":"123", 
+		"secret":"123",
+		"gameServerPort":"8080"
+	}
+}

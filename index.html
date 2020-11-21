@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>PVP WWF</title>
+        <style type="text/css" media="screen">@import "css/jqtouch.css";</style>
+        
+        <!-- <script src="js/lib/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jqtouch.js" type="text/javascript" charset="utf-8"></script> -->
+
+		<!-- Either, (1) Zepto:  Un-comment these 2 lines (order matters)  -->
+        <script src="js/lib/zepto.min.js" type="text/javascript" charset="utf-8"></script> 
+        <script src="js/jqtouch.js" type="text/javascript" charset="utf-8"></script> 
+        
+        <script type="text/javascript" src="js/zepto/zepto/event.js"></script>
+        <script type="text/javascript" src="js/zepto/lib/event.js"></script>
+        <script type="text/javascript" src="js/zepto/lib/rect.js"></script>
+        <script type="text/javascript" src="js/zepto/lib/drag-and-drop.js"></script>
+        
+        <script src="js/socket.io.js" type="text/javascript" charset="utf-8"></script> 
+        <script src="js/pvp.js" type="text/javascript" charset="utf-8"></script> 
+        <script src="src/game.js" type="text/javascript" charset="utf-8"></script>
+        <script src="src/config.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/gameFrameworkCore.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/gameFramework.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pvpFramework.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/pvpFrameworkInvitee.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.csv-0.71.js"></script>
+		
+        
+        <!-- Or,     (2) jQuery: Un-comment these 3 lines (order matters)  
+        <script src="js/lib/jquery-1.7.min.js" type="application/x-javascript" charset="utf-8"></script> 
+        <script src="js/jqtouch.js" type="text/javascript" charset="utf-8"></script> 
+        <script src="js/jqtouch-jquery.js" type="application/x-javascript" charset="utf-8"></script>-->
+
+        <!-- 
+            jQTouch Clock Demo
+            All custom code is embedded below:
+        -->
+        <link rel="stylesheet" href="clock.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="css/ui.css" type="text/css" media="screen" charset="utf-8" />
+      
+        <link rel="stylesheet" href="css/game.css" type="text/css" media="screen" charset="utf-8" />
+        
+		  <script type="text/javascript" src="cordova-2.2.0.js"></script>
+          <script src="js/SMSComposer.js" type="text/javascript" charset="utf-8"></script>
+          <script src="js/EmailComposer.js" type="text/javascript" charset="utf-8"></script>
+          <script src="js/TestFlight.js" type="text/javascript" charset="utf-8"></script>
+          
+          
+		  <!-- script type="text/javascript" src="js/index.js"></script -->
+          <!-- cordova facebook plugin -->
+          <!-- /*  FACEBOOK  */  <script src="js/cdv-plugin-fb-connect.js"></script>
+          <!-- facebook js sdk -->
+          <!-- /*  FACEBOOK  */  <script src="js/facebook_js_sdk.js"></script> 
+          
+          <!--<script src="HackBook/js/_config.js"></script>-->
+          <!--
+          /*  FACEBOOK  */
+          -->
+          <!--
+		  <script src="HackBook/js/ui.js"></script>
+          <script src="HackBook/js/auth.js"></script>
+          <script src="HackBook/js/feed.js"></script>
+          <script src="HackBook/js/graph_api.js"></script>
+          <script src="HackBook/js/requests.js"></script>
+          
+          -->
+          <!--<script src="HackBook/js/credits.js"></script>-->
+          <!--
+          /*  FACEBOOK  */
+          -->
+<script type="text/javascript" charset="utf-8">
+			
+			var connectionData = {}
+	
+			var roomId
+			var userEmail
+			
+		
+
+			var serverIP = config.regServer + "/" + config.application.appName + "/";
+            var jQT = new $.jQTouch({
+                icon: 'img/icon.png',
+                startupScreen: 'img/bg.png',
+				useFastTouch: true,
+				useTouchScroll: true
+            });
+			
+			
+            $(function(){
+				
+		
+				function supports_html5_storage() {
+				  try {
+					return 'localStorage' in window && window['localStorage'] !== null;
+				  } catch (e) {
+					return false;
+				  }
+				}
+				if(!supports_html5_storage()){
+					alert('Sorry you cannot use this app in non HTML5 Device')
+				}
+				var localStorage  = window.localStorage
+				
+				
+			
+                //showMyGames()
+				createSlotIfDoesntExistAndPlay()
+            });
+			var slots = new Array()
+			var maxSlots = 5;
+			var emptySlot;
+			var emptySlotDetails;
+			var playingSlot;
+			
+			var playingSlotSecret;
+			
+			
+			var myMove = false;
+			
+			
+			initGame()
+			
+			
+			//window.localStorage.clear();
+			//
+        </script>
+		  <script type="text/javascript" charset="utf-8">
+		  /*  FACEBOOK  */
+		  /*
+		  document.addEventListener('deviceready', function() {
+			  FB.init({
+				  appId: '357305570999833',
+				  nativeInterface: CDV.FB,
+				  useCachedDialogs: false
+			  });
+		  
+			  FB.getLoginStatus(handleStatusChange);
+		  
+			  authUser();
+			  updateAuthElements();
+		  });
+		  function testSuccess(result){
+			alert(JSON.stringify(result));  
+		  }
+		  function testFail(result){
+			  alert(JSON.stringify(result));  
+		  }*/
+		  </script>
+    </head>
+    <body>
+        <div id="jqt">
+            <div id="home">
+                <div class="bg"><div class="homeLogo"></div>
+                <!-- div class="homeButtons"><a href="javascript:navigator.contacts.choose(testSuccess,testFail)" class="slideleft"><img src="img/buttons/my_games.png" width="199" height="62"></a><a href="javascript:showInviteFriends()" ><img src="img/buttons/invite_friends.png" width="199" height="62"></a></div -->
+                </div>
+            </div>
+            <div class="center" id="myGames" >
+            	<div class="bg"><div class="innerLogo"></div>
+                <div class="myGamesList" id="myGamesList">
+                <div id="myList">
+                        <p>empty</p>
+                        <p>empty</p>
+                        <p>empty</p>
+                        <p>empty</p>
+                        <p>empty</p>
+                        <p>empty</p>
+                                       </div>
+                </div><!-- a href="#" class="back innerBack">BACK</a --></div>
+                <div class="ad"></div>
+            </div>
+            <div id="inviteFriends" >
+            	<div class="bg"><div class="innerLogo"></div>
+                <div id="fb-root"></div>
+                <div class="myGamesList" id="myGamesList" >
+                <div class="show_when_connected">
+                    <div id="myFriendList">
+                            <p >empty</p>
+                            <p>empty</p>
+                            <p>empty</p>
+                            <p>empty</p>
+                            <p>empty</p>
+                            <p>empty</p>
+                    </div>
+                </div>
+                <!--form id="inviteFriend">
+                  <ul class="rounded">
+                        <li><input type="text" id="name" name="name" placeholder="Name"></li>
+                        <li><input type="email" name="email" placeholder="Email" id="email"></li>
+                        
+                    </ul>
+                   <div class="newButtonHolder" id="start"><a href="#" class="button submit newButton">START GAME</a></div>
+                   <!-- div class="newButtonHolder" id="send"><a href="#" class="button newButton">SEND INVITE</a></div -->
+                    
+                <!-- /form-->
+                <div class="show_when_not_connected">
+                <a onClick="promptLogin()"><img src="img/buttons/Facebook_230x36.png" width="230" height="36"></a>
+                </div>
+                
+                </div>
+                <!-- a href="#" class="back innerBack">BACK</a -->
+                
+                </div>
+            </div>
+            <div id="gameCreated">
+            	<div class="bg"><div class="innerLogo"></div>
+                
+                <div class="homeButtons"><a href="javascript:playGame()" class="slideleft"><img src="img/buttons/start_playing.png" width="200" height="62"></a><div id="sendInvite"><a href="#" class="dummy"><img src="img/buttons/send_invite.png" width="200" height="62"></a></div></div>
+                
+                <a href="#" class="back innerBack">BACK</a>
+                </div>
+            </div>
+             <div class="center" id="gameview" >
+            	<div class="bg"><!--div class="innerLogo"></div-->
+                <div style="background-color:rgba(255,255,255,.9); width:320px; height:480px; position:absolute" id="game"></div>
+                <!--<div id="gvb" class="gameViewButtons"><a id="home" href="javascript:showMyGames()"><img src="img/buttons/home.png" width="34" height="34"></a><a id="chat"><img src="img/buttons/chat.png" width="34" height="34"></a><a id="resend"><img src="img/buttons/resend.png" width="34" height="34"></a><a href="javascript:deleteSlot()"><img src="img/buttons/end.png" width="34" height="34"></a></div>-->
+             	</div>
+                <!--a href="#" class="back innerBack">BACK</a><a href="javascript:deleteSlot()" class="button innerTopRight">DONE GAME</a><a href="#" class="button innerRight">RESEND INVITE</a-->
+             <div class="ad"></div>
+             </div>
+             
+             <div class="center" id="view1" >
+            	<div class="bg"><!--div class="innerLogo"></div-->
+                <div id="game1"></div>
+                
+             	</div>
+                
+             <div class="ad"></div>
+             </div>
+            <div class="center" id="view2" >
+            	<div class="bg"><!--div class="innerLogo"></div-->
+                <div id="game2"></div>
+                
+             	</div>
+                
+             <div class="ad"></div>
+             </div>
+        </div>
+    </body>
+</html>

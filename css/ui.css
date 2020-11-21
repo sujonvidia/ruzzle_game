@@ -1,0 +1,278 @@
+#loadinginprogress {
+    -webkit-border-radius: 10px;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 80px;
+    left: 60px;
+    line-height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    width: 200px;
+    z-index: 5000;
+}
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Arimo Bold'), local('Arimo-Bold'), url(../css/fonts/arimo700.woff) format('woff');
+}
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  /*src: local('Arimo'), url(../css/fonts/estre.ttf) format('ttf');*/
+  src: local('Arimo'), url(../css/fonts/arimo400.woff) format('woff');
+}
+.homeLogo{
+	background:url(../game_img/logo.png) no-repeat;
+	width:320px;
+	height:82px;
+	/*top:34px;
+	left:40px;*/
+	margin-left:auto;
+	margin-right:auto;
+    background-size: contain;
+}
+.innerLogo{
+	background:url(../game_img/WWFLogo.png) no-repeat;
+	width:320px;
+	height:82px;
+	/*top:34px;
+	left:40px;*/
+	margin-left:auto;
+	margin-right:auto;
+    background-size: contain;
+	/*position:absolute*/
+}
+.homeButtons{
+	width:199px;
+	top:212px;
+	left:67px;
+	position:absolute
+}
+.bg{
+	position:absolute;
+	top:0px;
+	/*background-image:url(../img/bg.png); */
+	background-image:url(../img/bg_tile.jpg);
+	width:320px; 
+	height:480px
+}
+.innerBack{
+	top:436px;
+	left:15px;
+	position:absolute
+}
+.innerRight{
+	top:436px;
+	left:198px;
+	right:0px !important;
+	width: 85px !important;
+	position:absolute
+}
+.innerTopRight{
+	top:2px;
+	left:225px;
+	right:0px !important;
+	width: 70px !important;
+	position:absolute
+}
+
+.myGamesList{
+	top:80px;
+	position:absolute;
+	width:320px
+}
+.newButton{
+	bottom:-25px !important;
+	width:250px !important;
+	right:24px !important;
+	text-align:center !important;
+	
+}
+.newButtonHolder{
+	padding-top:10px;
+	
+}
+.hidden{
+	visibility:hidden;	
+}
+.ad{
+	
+	width:300px;
+	height:50px;
+	position:fixed;
+	top:430px;
+	left:10px;
+	background-color:#CCC	
+}
+#myList a:link, #myList a:visited, #myList a:hover,#myList a:active{
+text-decoration:none;
+color:#000;
+		
+}
+a:link{
+	text-decoration:none;
+}
+.odd_empty{
+	background-image:url(../img/Tab_invite.png),url(../img/Tab_01.png);
+}
+.even_empty{
+	background-image:url(../img/Tab_invite.png),url(../img/Tab_02.png);
+	
+	
+}
+.odd_play{
+	background-image:url(../img/Tab_move.png),url(../img/Tab_01.png);
+	
+}
+.even_play{
+	background-image:url(../img/Tab_move.png),url(../img/Tab_02.png);
+	
+	
+}
+.odd_buy{
+	background-image:url(../img/Tab_buy.png),url(../img/Tab_01.png);
+	
+}
+.even_buy{
+	background-image:url(../img/Tab_buy.png),url(../img/Tab_02.png);
+	
+	
+}
+.tab{
+    /*border: 2px solid red;*/
+    background-repeat: no-repeat;
+	width:320px;
+	height:52px;
+    background-size: contain;
+    background-position: top center;
+}
+.tab_copy{
+	font-family:Arimo;
+	font-size:14px;
+	font-weight:400;
+	padding-left:75px;
+	padding-top:18px;
+	padding-bottom:14px;
+}
+.avatarBlack{
+	background-image:url(../img/AvatarBlack.png);
+	width:40px;
+	height:40px;
+	position:relative;
+	float:left;
+	top:6px;
+	left:25px
+}
+.dummy{
+	
+}
+body.connected .show_when_not_connected {
+ display: none;
+}
+
+body.connected .show_when_connected {
+ display: block;
+}
+
+body.not_connected .show_when_not_connected {
+ display: block;
+}
+
+body.not_connected .show_when_connected {
+ display: none;
+}
+
+body.permissioned .show_when_not_connected {
+ display: none;
+}
+
+body.not_permissioned .show_when_not_connected {
+ display: none;
+}
+
+body.permissioned #extended_permission_button {
+ display: none;
+}
+
+body.not_permissioned #extended_permission_button {
+ display: block;
+}
+#iphone-scrollcontainer { height:300px; width:320px; overflow:auto; position:absolute; top:0px; left:0px; }
+#iphone-scroll { 
+	list-style: none; 
+	padding:0  !important; 
+	margin:0  !important; 
+	font-family:Georgia, Times, serif !important; 
+	font-size:15px  !important;}
+#iphone-scroll li { padding:0px !important; }
+#iphone-scroll ul { 
+	list-style: none !important; 
+	padding:0 !important;  
+	margin:0 !important; 
+}
+#iphone-scroll ul li { 
+font-style:normal !important;
+
+
+font-family:Georgia, Times, serif !important;   }
+#iphone-scroll ul li a { 
+	display:block !important; 
+	text-decoration:none !important; 
+	color:#000000 !important; 
+	background-color:#FFFFFF !important; 
+	line-height:30px !important;
+	border-bottom-style:solid !important; 
+	border-bottom-width:1px !important; 
+	border-bottom-color:#CCCCCC !important; 
+	padding-left:10px !important; 
+	cursor:pointer !important; 
+	}
+#iphone-scroll ul li a:hover { 
+	color:#FFFFFF !important; 
+	background-image:url(../img/hover.png) !important; 
+	background-repeat:repeat-x !important; 
+	}
+#iphone-scroll ul li a strong { margin-right:10px !important; }
+
+.nav-indicator { 
+line-height:20px !important; 
+background-image:url(../img/nav-indicator-bg.png) !important; 
+background-repeat:repeat-x !important; color:#FFFFFF !important; 
+text-indent:20px !important; 
+}
+
+#nav-indicator-fixed { line-height:20px !important; background-image:url(../img/nav-indicator-bg.png) !important; background-repeat:repeat-x !important; color:#FFFFFF !important; text-indent:20px !important;
+position:fixed !important; width:320px !important; }
+
+#iphone-search { 
+	list-style: none !important; 
+	padding:0 5px !important; 
+	margin:0 !important; 
+	font-family:Georgia, Times, serif !important;  
+	font-size:12px !important; 
+	line-height:17px !important; 
+	left:315px !important; 
+	margin-top: 20px !important;
+	position:fixed !important; 
+	text-align:center !important; 
+	font-weight:bold !important; 
+}
+#iphone-search li a { text-decoration:none !important; 
+color:#666666 !important; }
+#iphone-search li a:hover { color:#000000 !important; }
+.searchbg { background-color:#999999 !important; }
+
+#jqt .center {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 320px;
+    height: 480px;
+    min-height: 0px;
+}

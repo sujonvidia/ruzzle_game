@@ -1,0 +1,844 @@
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.player2{
+	height: 10px;
+	width: 25px;
+   	text-align:left;
+	padding-left:15px;
+/*	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+	color:#C63;
+	font-size:small;
+	font-weight:500;
+}
+
+.playerScore2{
+	height: 10px;
+	width: 25px;
+	text-align:left;
+	color:#C63;
+/*	font-weight:bold;*/
+}
+
+
+
+.player{
+	height: 15px;
+	width: 80px;
+	float:left;
+	padding-left:15px;
+	color:#C63;
+	font-size:small;
+	font-weight:500;
+}
+
+.playerScore{
+	height: 15px;
+	width: 75px;
+	padding-left:95px;
+	color:#C63;
+	font-size:small;
+	font-weight:500;
+/*	font-weight:bold;*/
+}
+
+.brdTbl{
+	width: 315px;
+	height: 280px;
+	position:absolute;
+}
+
+.brdTblLarge{
+	width: 315px;
+	height: 280px;
+}
+
+.board{
+	height: 300px;/*270px;*/
+	width: 320px;
+	/*overflow: auto;*/
+    margin-left: 3px;
+    /*margin-top:50px;*/	
+}
+
+.boardTbl{
+	height: 300px;
+	width: 320px;
+	position: relative;
+	/*-webkit-transform-origin:left top;
+    /*margin-top:30px;*/
+}
+
+.boardLarge{
+	height: 370px;
+	width: 420px;
+	overflow: hidden;
+    margin-left:3px;
+    /*margin-top:30px;*/
+}
+.boxTW {
+    width:21px;
+    height:18px;
+	background-image:url(../game_img/Src/TW.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*21px 18px;*/
+    /*border: 1px solid black;*/
+}
+.boxTWLarge {
+    width:42px;
+    height:36px;
+	background-image:url(../game_img/Src/TW.png);
+    /*background-repeat: no-repeat;*/
+    background-size: 42px 36px;
+    /*border: 1px solid black;*/
+}
+.boxDW {
+    width:21px;
+    height:18px;
+	background-image:url(../game_img/Src/DW.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*21px 18px;*/
+    /*border: 1px solid black;*/
+}
+.boxDWLarge {
+    width:42px;
+    height:36px;
+	background-image:url(../game_img/Src/DW.png);
+    /*background-repeat: no-repeat;*/
+    background-size: 42px 36px;
+    /*border: 1px solid black;*/
+}
+.boxTL {
+    width:21px;
+    height:18px;
+	background-image:url(../game_img/Src/TL.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*21px 18px;*/
+    /*border: 1px solid black;*/
+}
+.boxTLLarge {
+    width:42px;
+    height:36px;
+	background-image:url(../game_img/Src/TL.png);
+    /*background-repeat: no-repeat;*/
+    background-size: 42px 36px;
+    /*border: 1px solid black;*/
+}
+.boxDL {
+    width:21px;
+    height:18px;
+	background-image:url(../game_img/Src/DL.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*21px 18px;*/
+    /*border: 1px solid black;*/
+}
+.boxDLLarge {
+    width:42px;
+    height:36px;
+	background-image:url(../game_img/Src/DL.png);
+    /*background-repeat: no-repeat;*/
+    background-size: 42px 36px;
+    /*border: 1px solid black;*/
+}
+.boxSP {
+    width:21px;
+    height:18px;
+	background-image:url(../game_img/SP.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*21px 18px;*/
+    /*border: 1px solid black;*/
+}
+.boxSPLarge {
+    width:42px;
+    height:36px;
+	background-image:url(../game_img/Src/SP.png);
+    /*background-repeat: no-repeat;*/
+    background-size: 42px 36px;
+    /*border: 1px solid black;*/
+}
+.box {
+    width:21px;
+    height:20px;
+	background-image:url(../game_img/main_brd.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;/* 21px 18px;*/
+    /*border: 1px solid black;*/
+}
+.boxLarge {
+    /*width:42px;
+    height:36px;*/
+	background-image:url(../game_img/Src/Brd.png);
+    /*background-repeat: no-repeat;*/
+    /*background-size: 42px 36px;*/
+    /*border: 1px solid black;*/
+}
+.boxN {
+    width:18px;
+    height:18px;
+    /*border: 1px solid black;*/
+}
+.boxNLarge {
+    width:36px;
+    height:36px;
+    /*border: 1px solid black;*/
+}
+
+
+.boxPre {
+    width:17px;
+    height:17px;
+    border: 1px solid black;
+    background-color:#CCC;
+}
+
+.m1 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	/*background-size: 40px 38px;*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/A.png);
+    /*background-repeat: no-repeat;*/
+   /* background-size: 40px 38px;/*17px 17px;*/
+}
+.m2 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/B.png);
+
+    /*margin-top:15px;*/
+}
+.m3 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/C.png);
+
+}
+.m4 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/D.png);
+
+    /*margin-top:15px;*/
+}
+.m5 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/E.png);
+
+}
+.m6 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/F.png);
+
+    /*background-size: 20px 20px;
+    /*margin-top:15px;*/
+}
+.m7 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/G.png);
+
+    /*background-size: 20px 20px;*/
+}
+.m8 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/H.png);
+
+    /*background-size: 20px 20px;
+   /* margin-top:15px;*/
+}
+.m9 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/I.png);
+
+    /*background-size: 20px 20px;*/
+}
+.m10 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/J.png);
+
+}
+.m11 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/K.png);
+
+    
+}
+.m12 {
+   	width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/L.png);
+
+}
+.m13 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/M.png);
+
+}
+.m14 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/N.png);
+
+}
+.m15 {
+   width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/O.png);
+
+}
+.m16 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/P.png);
+
+}
+.m17 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/Q.png);
+
+}
+.m18 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/R.png);
+
+}
+.m19 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/S.png);
+
+}
+.m20 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/T.png);
+
+}
+.m21 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/U.png);
+
+}
+.m22 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/V.png);
+
+}
+.m23 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/W.png);
+
+}
+.m24 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/X.png);
+
+}
+.m25 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/Y.png);
+
+}
+.m26 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/Z.png);
+
+}
+.m27 {
+    width:40px; /*20*/
+    height:38px; /*20*/
+	background-size:contain;
+	background-repeat:no-repeat;
+    background-image:url(../game_img/Letters/Empty.png);
+
+}
+
+
+.nm1 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/A_x.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*17px 17px;*/
+}
+.nm2 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/B_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm3 {
+   width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/C_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm4 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/D_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm5 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/E_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm6 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/F_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm7 {
+   width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/G_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm8 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/H_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm9 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/I_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm10 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/J_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm11 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/K_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm12 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/L_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm13 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/M_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm14 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/N_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm15 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/O_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm16 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/P_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm17 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/Q_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm18 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/R_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm19 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/S_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm20 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/T_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm21 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/U_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm22 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/V_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm23 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/W_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm24 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/X_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm25 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/Y_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm26 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/Z_x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nm27 {
+    width:17px;
+    height:17px;
+    background-image:url(../game_img/Letters/Empty.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.swappingTiles {
+	height: 27px;
+	width: 205px;
+	/*background-color: #0C3;*/
+	margin-left: 4px;
+	margin-top: 25px;
+	
+}
+
+
+.keySwap {	
+	/*background-color:#0C3;*/
+	/*-webkit-transform-origin:center;*/
+	margin-top:230px;
+    margin-left:55px;
+	/*z-index: 5000;*/
+	width:210px;
+	height:90px;
+	background-image:url("../img/swap_bg.png");
+	background-repeat: no-repeat;
+    background-size: 210px 80px;
+	position:absolute;
+}
+
+.boxSwap {
+	margin-top: -2px;
+	width: 28px;
+	height: 31px;
+	float: left;
+	border: thin;
+	border-color: #000;
+	/*background-image: url("../game_img/SP2.png");
+	background-repeat: no-repeat;*/
+	padding-left: 1px;
+	background-size: 29px 31px;
+}
+
+
+.boxDrag {
+    /*width:40px;/*21*/
+    /*height:38px;/*20*/
+    float:left;
+}
+
+.bD {
+    width:35px;/*21*/
+    height:32px;/*20*/
+    float:left;
+}
+
+.mD {
+    width:35px;
+    height:32px;
+    float:left;
+	padding-left:5px;
+	padding-top:7px;
+	/*background-color:#000;*/
+}
+
+.bD2 {
+    width:21px;/*21*/
+    height:20px;/*20*/
+    float:left;
+}
+
+.key {
+	width:320px;
+	height:90px;
+	background-image:url("../game_img/bottomDiv.png");
+	
+	/*background-color:#5DBD26;*/
+	margin-top:2px;
+}
+
+.topColor{
+/*	background-color:#FFC;	*/
+	background-image:url("../game_img/sbrd.png");
+	background-repeat: no-repeat;
+    background-size: 175px 34px;
+	margin-left: 113px;
+	width: 175px;
+	float:left;
+	padding-right:0px;
+	height:34px;
+	margin-top:5px;
+}
+
+.moveDivs {	
+	/*background-color:#FFF;*/
+	width:320px; /*320px;*/
+	height:50px; /*50px;*/
+	background-image:url("../game_img/moveDiv.png");
+	background-repeat: no-repeat;
+    background-size: 290px 45px;
+	padding-left: 20px;
+	background-position-x: 16px;
+}
+
+.bonusAlpha {	
+	background-image: url(../img/bonus_bg.png);
+	background-repeat: no-repeat;
+	margin-top: 80px;
+	margin-left: 56px;
+	background-size: 208px 270px;
+	width: 208px;
+	height: 270px;
+	position: absolute;
+}
+
+.innerBonusAlpha {	
+	/*background-color: #0C3;*/
+	margin-top: 33px;
+	width: 231px;
+	height: 236px;
+	margin-left: 5px;
+}
+
+
+.bonusEach{
+	float:left;
+}
+
+.keySwap2 {
+	background-color:#0C3;
+	-webkit-transform-origin:center;
+	margin-top:220px;
+    /*margin-left:15px;*/
+	/*z-index: 5000;*/
+}
+
+.ad {
+    height: 44px;
+    width: 300px;
+    float: left;
+    margin-left:-2px;
+    margin-top:49px;
+    background-image:url("../game_img/Src/WWFLogo.png");
+    background-size: 300px;
+	background-repeat: no-repeat;
+}
+.divT{
+	/*margin-top:20px;*/
+}
+
+
+.ad_top {
+    height: 44px;
+    width: 300px;
+    float: left;
+    margin-left:-2px;
+    margin-top:49px;
+    background-image:url("../game_img/Src/WWFLogo.png");
+    background-size: cover;
+}
+
+.bg {
+    background-image: url("../game_img/Src/cell_ply1.png");
+    background-repeat: no-repeat;
+    background-size: 320px 480px;
+    height: 480px;
+    top: 0;
+    width: 320px;
+	overflow:hidden;
+}
+.timer{
+    position: absolute;
+    margin-top: -7px;
+    margin-left: 145px;
+    font-size:large;
+    font-family:"Courier New", Times, Monospace;
+    font-weight:bold;
+    text-align:center;
+    color: #FFFFFF;
+}
+.gameViewButtons{
+    position:absolute;
+    /*top:434px;*/
+    width:110px;
+	height:44px;
+	background-color:#5DBD26;
+    /*text-align:center;*/
+}
+.gameViewButtons img{
+    padding-left:2px;
+	padding-top:5px;
+    /*padding-right:2px;*/
+}
+
+.gameViewButtons a{
+    /*width:40px;*/
+	float:left;
+}
+
+.gameAllTopView{
+	width: 320px;
+	height: 44px;
+	background-color: #5DBD26;
+}
+
+.gamePlayButtons{
+	/*padding-top:5px;*/
+	padding-left:3px;
+	padding-right:2px;
+	width:75px;
+	height:35px;
+}
+
+.gameWaitingLabel{
+	padding-left: 106px;
+	padding-top: 12px;
+	width: 95px;
+	height: 55px;
+}
+
+.bimg{
+	width: 80%;
+	height: 80%;
+		
+}
+
+.tbldata{
+	width:50px;
+	height:70px;
+	
+	
+}
